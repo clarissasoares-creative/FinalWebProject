@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cambridge Reviewer - Reviews</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../js/theDOM.js"></script>
+  </head>
+
+  
+  <body>
+        
+    <!-- The header is 400px high with an image background -->
+    <header>
+      <div class="topnav">
+        <!-- the navbar has a transparent backgound and no bullet points in the list -->
+        <ul>
+          <!-- the links sit next to each other -->
+         <li><a href="../index.html">Home</a></li>
+         <li><a class="active" href="#reviews">Reviews</a></li>
+         <li><a href="../pages/about.html">About</a></li>
+         <li><a href="../pages/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <!-- center the h1 -->
+      <h1>Reviews</h1>
+    </header>
+
+      
+      
+    <div class="reviewContainer">
+            
+            <div class="reviewItem">
+                
+                <img src="../mathematical_bridge.jpg" alt="Mathematical Bridge" min-width="200">
+                
+                <p>The Mathematical Bridge was designed by William Etheridge, and built by James Essex in 1749.
+                  It has been rebuilt on two occasions, in 1866 and in 1905, but has kept the same overall design.
+                  Although it appears to be an arch, it is composed entirely of straight timbers
+                  built to an unusually sophisticated engineering design, hence the name.</p>
+                
+                <div class="buttonGroup">
+
+                    <button onclick="document.location = 'readReviews.html'">Read Reviews</button>
+                    
+                    <button onclick="document.location = 'leaveReview.html'">Leave Review</button>
+                    
+                </div>
+
+            </div>
+            
+            <div class="reviewItem">
+                <img src="../The_Eagle_pub_ceiling.jpg" alt="The Eagle Pub" min-width="200">
+                
+                <p>One of the most famous of Cambridge pubs, there is a ceiling with signatures of Second World War pilots.
+                Perhaps more importantly this is where Crick and Watson announced the discovery of the structure of DNA.</p>
+                
+                <div class="buttonGroup">
+
+                  <button onclick="document.location = 'readReviews.html'">Read Reviews</button>
+                
+                  <button onclick="document.location = 'leaveReview.html'">Leave Review</button>
+                
+                </div>
+            </div>
+
+            <div class="reviewItem">
+                <img src="../corpus_clock.jpg" alt="Corpus Clock" min-width="200">
+                
+                <p>The Corpus Clock, also known as the Grasshopper clock, is a large sculptural clock at street level.
+                  It was conceived and funded by John C. Taylor, an old member of the college.
+                  It was officially unveiled to the public on 19 September 2008 by Cambridge physicist Stephen Hawking.</p>
+                
+                <div class="buttonGroup">
+
+                  <button onclick="myFunction()">Read Reviews</button>
+                  
+                  <button onclick="myFunction2()">Leave Review</button>
+                                                           
+                </div>
+              </div>
+
+            <div id="myDIV">
+                  <p>
+                  <strong>AnnoyingTeenager123 says:</strong>
+                  <br>
+                  The clock is crazy! There's an ugly bug on it and you can't even tell the time.
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <br>
+                  <br>
+                  <strong>HipsterArtGraduate says:</strong>
+                  <br>
+                  Incredible piece of art!
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  </p>
+            </div>
+
+            <div id="myDIV2">
+              <p>
+              <strong>Leave your review below!</strong>
+              </p>
+              <br>
+              <div class="container">
+                <form action="#reviews">
+                <div class="row">
+                  <div class="col-25">
+                    <label for="name">Username</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" id="name" name="fullname" placeholder="Your username...">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label for="message">Review</label>
+                  </div>
+                  <div class="col-75">
+                    <textarea id="message" name="message" placeholder="Write your review here..." style="height:200px"></textarea>
+                  </div>
+                </div>
+                <div class="row">
+                  <input type="submit" value="Submit">
+                </div>
+                </form>
+              </div>
+            
+        </div>
+    </div>      
+        
+     
+
+    <div class="footer">
+        &copy; Code First Girls 2020
+    </div>
+   
+   
+  </body>
+
+</html>

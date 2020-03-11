@@ -1,0 +1,301 @@
+
+/* General formatting of the Navbar*/
+.topnav {
+  background-color: transparent;
+  overflow: hidden;
+  float: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+   
+}
+
+/* Formatting of the list in the Navbar*/
+.topnav li{
+  background-color: transparent;
+  overflow: hidden;
+  float: left;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  
+}
+
+/* Formatting of the text in the Navbar*/
+.topnav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 14pt;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  /* text-shadow: 2px 2px cornflowerblue; */
+  
+}
+
+/* Change the link color on hover */
+li a:hover {
+  background-color: cornflowerblue;
+}
+
+/* Add a color to the active/current link */
+/* .topnav a.active {
+  background-color: cornflowerblue;
+  color: white;
+} */
+
+/* Formatting of the header background/image*/
+header {
+  background-size: 100% 100%;
+  background-image: url("../kings_resized_less_sky.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+ 
+ /* Formatting of the header text (website title)*/
+header h1 {
+  height: 300px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48pt;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 2px 2px cornflowerblue;
+}
+
+  
+/* Formatting of the intro text below the header*/
+.intro {
+  min-height: 400px;
+  /* display: flex; */
+  background-color: transparent;
+  color: cornflowerblue;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+}
+
+
+/* Formatting of the title in the intro */
+.introTitle {
+  color: cornflowerblue;
+  font-size: 22pt;
+  font-weight: bold;
+}
+
+/* Formating for the footer */
+.footer {
+  background: transparent;
+  color: cornflowerblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10pt;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* General formatting for review text */
+.reviewContainer {
+  padding: 30px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+     
+}
+
+/* Formatting for each review item */
+.reviewItem {
+  display: flex;
+  padding: 30px;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+  color: cornflowerblue;
+  
+}
+
+/* Formatting for the review images */
+.reviewItem img {
+  display: flex;
+  min-width: 200px;
+  max-height: 150px;
+  padding: 10px;
+}
+
+/* Formatting for the text inside the review items  */
+.reviewItem p {
+  display: flex;
+  padding: 10px;
+  background-color: #f2f2f2;
+}
+
+/* Formatting for the buttons */
+.buttonGroup {
+  display: flex;
+  min-width: 150px;
+  flex-direction: column;
+  padding: 20px;
+  align-items: top;
+  
+}
+
+/* Margin to separate buttons */
+.buttonGroup button {
+  margin: 5px;
+  background-color: cornflowerblue;
+  color: white;
+  padding: 5px 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+button:hover {
+  background-color: lightskyblue;
+}
+
+/* Making reviews appear */
+#myDIV {
+  display: flex;
+  padding: 30px;
+  align-items: center;
+  justify-content: start;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+  color: cornflowerblue;
+  visibility: hidden;
+}
+
+/* Star rating colour */
+.checked {
+  color: orange;
+}
+
+/* Making review box appear */
+#myDIV2 {
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+  color: cornflowerblue;
+  visibility: hidden;
+}
+
+
+/* Formatting of the message box on Contact page */
+*{
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: cornflowerblue;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: lightskyblue;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+ }
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.cambridgeMap {
+  position: relative; /* Sit on top of the page content */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+#imageKings{
+  position: absolute;
+  opacity: 0;
+  top: 30%;
+  left: 30%;
+}
+
+#imageMillRd{
+  position: absolute;
+  opacity: 0;
+  top: 40%;
+  left: 60%;
+}
+
+
+
+/* table tbody tr:first-child {
+  font-size: 30px;
+} */
